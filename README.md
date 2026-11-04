@@ -122,19 +122,32 @@ This lab is useful for learning:
 Below are placeholders for key screenshots from the setup and testing process.
 
 ### Architecture Diagram
-![Architecture Diagram](./docs/architecture-diagram.png)
+![Architecture Diagram](./screenshots/architecture-diagram.png)
 
 ### Domain Controller
-![Domain Controller](./docs/dc01-overview.png)
+![Domain Controller](./screenshots/dc01-overview.png)
 
 ### Active Directory Users and Computers
-![AD Users and Computers](./docs/ad-users-and-computers.png)
+![AD Users and Computers](./screenshots/ad-users-and-computers.png)
+
+Users and Security Groups
+users-and-groups.png
+
+Domain Authentication
+client01-domain-login.png
 
 ### Group Policy Management
-![Group Policy Management](./docs/group-policy.png)
+![Group Policy Management](./screenshots/group-policy.png)
 
 ### File Share Permissions
-![File Share Permissions](./docs/file-share-permissions.png)
+![File Share Permissions](./screenshots/file-share-permissions.png)
+
+Drive Mapping
+drive-mappings.png
+
+Remote Administration
+wireguard-connected.png
+
 
 ## Future Improvements
 
