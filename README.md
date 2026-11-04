@@ -121,14 +121,14 @@ This lab is useful for learning:
 
 Below are placeholders for key screenshots from the setup and testing process.
 
-### Architecture Diagram
-![Architecture Diagram](./screenshots/architecture-diagram.png)
+### Hyper-V Overview
+![Domain Controller](./screenshots/hyper-v-overview.png)
 
 ### Domain Controller
-![Domain Controller](./screenshots/dc01-overview.png)
+![Domain Controller](./screenshots/dc01-server-manager.png)
 
 ### Active Directory Users and Computers
-![AD Users and Computers](./screenshots/ad-users-and-computers.png)
+![AD Users and Computers](./screenshots/active-directory-ou-strucutre.png)
 
 Users and Security Groups
 users-and-groups.png
@@ -137,7 +137,7 @@ Domain Authentication
 client01-domain-login.png
 
 ### Group Policy Management
-![Group Policy Management](./screenshots/group-policy.png)
+![Group Policy Management](./screenshots/group-policy-management.png)
 
 ### File Share Permissions
 ![File Share Permissions](./screenshots/file-share-permissions.png)
