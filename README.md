@@ -1,49 +1,44 @@
-Active Directory Homelab
+# Active Directory Homelab
 
-Overview
-Built a Windows Server 2022 Active Directory homelab using Hyper-V to simulate a small business environment.
+## Overview
+This project builds a Windows Server 2022 Active Directory homelab using Hyper-V to simulate a small business environment. The lab is designed to model common enterprise identity, access control, and file-sharing practices found in real-world organizations.
 
-Technologies
-Windows Server 2022
-Active Directory Domain Services
-DNS
-Group Policy
-Hyper-V
-Windows 11
-WireGuard
-PowerShell
-Environment
-DC01
+## Technologies
+- Windows Server 2022
+- Active Directory Domain Services (AD DS)
+- DNS
+- Group Policy
+- Hyper-V
+- Windows 11
+- WireGuard
+- PowerShell
+
+## Environment
+The lab consists of three virtual machines:
+
+### DC01
 Roles:
+- Active Directory
+- DNS
 
-Active Directory
-DNS
-FILE01
+### FILE01
 Roles:
+- File Server
+- Shared Storage
 
-File Server
-Shared Storage
-CLIENT01
+### CLIENT01
 Roles:
+- Domain-joined workstation
 
-Domain Joined Workstation
-AD Structure
-CORP ├── Users ├── Groups ├── Computers ├── Servers ├── IT ├── HR └── Service Accounts
+## AD Structure
+The Active Directory environment follows a simple corporate model:
 
-Security Groups
-IT_Admins
-HR_Users
-File_RW
-File_RO
-Domain_Workstations
-Testing Performed
-Domain join validation
-RBAC testing
-Group Policy deployment
-Share permissions testing
-Remote administration via WireGuard
-Lessons Learned
-DNS is critical to Active Directory functionality
-Hyper-V Enhanced Session Mode can impact domain user logins
-Security groups provide scalable access control
-Group Policy can be used to centrally manage workstations
+```text
+CORP
+├── Users
+├── Groups
+├── Computers
+├── Servers
+├── IT
+├── HR
+└── Service Accounts
