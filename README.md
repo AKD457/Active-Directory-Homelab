@@ -1,10 +1,11 @@
 # Active Directory Homelab
 
-A Windows Server 2022 Active Directory homelab built with Hyper-V to simulate a small business environment. This project focuses on core identity, access control, networking, and administration concepts commonly used in enterprise IT environments.
+A Windows Server 2022 Active Directory homelab built with Hyper-V to simulate a small business environment. This project focuses on core identity, access control, networking, and administration concepts used in real enterprise environments.
 
 ## Overview
 
 This lab models a lightweight corporate infrastructure with:
+
 - A domain controller
 - A file server
 - A Windows 11 client workstation
@@ -31,20 +32,26 @@ The goal is to practice and validate real-world Windows server administration in
 The homelab consists of three primary virtual machines:
 
 ### DC01
+
 Responsibilities:
+
 - Active Directory
 - DNS
 - Domain services
 - Central authentication and identity management
 
 ### FILE01
+
 Responsibilities:
+
 - File Server
 - Shared Storage
 - Access control for SMB shares
 
 ### CLIENT01
+
 Responsibilities:
+
 - Domain-joined workstation
 - User logon validation
 - Group Policy application
@@ -111,6 +118,7 @@ The environment was validated through several key tasks:
 ## Practical Notes
 
 This lab is useful for learning:
+
 - Windows Server administration
 - Domain controller setup and troubleshooting
 - Group-based permissions
@@ -119,26 +127,58 @@ This lab is useful for learning:
 
 ## Screenshots
 
-Below are placeholders for key screenshots from the setup and testing process.
+Below are key screenshots from the setup and validation process.
 
-### Architecture Diagram
-![Architecture Diagram](./docs/architecture-diagram.png)
+### Hyper-V Overview
+
+![Hyper-V Overview](./screenshots/hyper-v-overview.png)
 
 ### Domain Controller
-![Domain Controller](./docs/dc01-overview.png)
+
+![Domain Controller](./screenshots/dc01-server-manager.png)
 
 ### Active Directory Users and Computers
-![AD Users and Computers](./docs/ad-users-and-computers.png)
+
+![Active Directory OU Structure](./screenshots/active-directory-ou-structure.png)
+
+### Users and Security Groups
+
+![Users and Security Groups](./screenshots/users-and-groups.png)
+
+### DNS Manager
+
+![DNS Manager](./screenshots/dns-manager.png)
 
 ### Group Policy Management
-![Group Policy Management](./docs/group-policy.png)
+
+![Group Policy Management](./screenshots/group-policy-management.png)
 
 ### File Share Permissions
-![File Share Permissions](./docs/file-share-permissions.png)
+
+![File Share Permissions](./screenshots/file-share-permissions.png)
+
+### Drive Mappings
+
+![Drive Mappings](./screenshots/drive-mappings.png)
+
+### Domain Authentication
+
+![Client Domain Login](./screenshots/client01-domain-login.png)
+
+### Remote Administration
+
+![WireGuard Connected](./screenshots/wireguard-connected.png)
+
+> Note: The repository currently contains screenshots for the domain login and remote administration workflow, and the referenced image paths above reflect the actual files available in the `screenshots/` directory.
+
+### Enhanced Session Troubleshooting
+
+![Enhanced Session Troubleshooting](./screenshots/enhanced-session-troubleshooting.png)
 
 ## Future Improvements
 
 Potential enhancements for this lab include:
+
 - Adding a second domain controller for redundancy
 - Implementing OU-based policy segmentation
 - Testing certificate services or PKI
@@ -147,4 +187,4 @@ Potential enhancements for this lab include:
 
 ## Summary
 
-This Active Directory homelab provides a practical, hands-on way to explore core Windows enterprise identity and access control concepts. It serves as a strong foundation for learning domain administration, security groups, centralized policy management, and remote infrastructure access.
+This Active Directory homelab provides a practical, hands-on way to explore core Windows enterprise identity and access control concepts. It serves as a strong foundation for learning domain administration, role-based permissions, and secure remote infrastructure management in a self-contained environment.
